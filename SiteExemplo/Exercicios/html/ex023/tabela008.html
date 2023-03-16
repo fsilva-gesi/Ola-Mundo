@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em Telas Pequenas</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, veritatis earum a sit architecto doloremque voluptas reiciendis quibusdam quia omnis non dolor cum voluptates eum ratione ipsum mollitia dolores facere?</p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="amarelo">
+                <col class="vermelho" span="2">
+            </colgroup>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>Produto 4</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                    <td>01</td>
+                    <td>25</td>
+                    <td>09</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
