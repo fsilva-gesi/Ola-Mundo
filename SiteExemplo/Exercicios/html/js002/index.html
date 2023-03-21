@@ -5,8 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora em JavaScript</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <h1>Exemplo de Calculadora em JavaScript</h1>
+    <div class="calc">
+        <table>
+            <tr>
+                <td class="resultado" colspan="4">
+                    <output class="res" id="res"></output>
+                </td>
+            </tr>
+            <tr>
+                <td class="bt" id="i7"><p>7</p></td>
+                <td class="bt" id="i8"><p>8</p></td>
+                <td class="bt" id="i9"><p>9</p></td>
+                <td class="bt" id="iX"><p>X</p></td>
+            </tr>
+            <tr>
+                <td class="bt" id="i4"><p>4</p></td>
+                <td class="bt" id="i5"><p>5</p></td>
+                <td class="bt" id="i6"><p>6</p></td>
+                <td class="bt" id="i-"><p>-</p></td>
+            </tr>
+            <tr>
+                <td class="bt" id="i1"><p>1</p></td>
+                <td class="bt" id="i2"><p>2</p></td>
+                <td class="bt" id="i3"><p>3</p></td>
+                <td class="bt" id="i+"><p>+</p></td>
+            </tr>
+            <tr>
+                <td class="bt" id="i+/-"><p>+/-</p></td>
+                <td class="bt" id="i0"><p>0</p></td>
+                <td class="bt" id="i,"><p>,</p></td>
+                <td class="bt" id="i="><p>=</p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="resultados" id="resultados">
+        <output class="numero" id="num1"></output>
+    </div>
+    <script>
+        var rs=window.document.getElementById("res")
+        var num1=0
+        var num2=0
+        var operpar=""
+        var resultado=0
+
+        var i9 = window.document.getElementById("i9")
+        var i8 = window.document.getElementById("i8")
+        var i7 = window.document.getElementById("i7")
+        var i6 = window.document.getElementById("i6")
+        var i5 = window.document.getElementById("i5")
+        var i4 = window.document.getElementById("i4")
+        var i3 = window.document.getElementById("i3")
+        var i2 = window.document.getElementById("i2")
+        var i1 = window.document.getElementById("i1")
+        var i0 = window.document.getElementById("i0")
+        var iv = window.document.getElementById("i,")
+        var imult = window.document.getElementById("iX")
+        var isub = window.document.getElementById("i-")
+        var isoma = window.document.getElementById("i+")
+        var idiv = window.document.getElementById("i+/-")
+        var ires = window.document.getElementById("i=")
+
+        i9.addEventListener("click", function(){add("9")})
+        i8.addEventListener("click", function () { add("8") })
+        i7.addEventListener("click", function () { add("7") })
+        i6.addEventListener("click", function () { add("6") })
+        i5.addEventListener("click", function () { add("5") })
+        i4.addEventListener("click", function () { add("4") })
+        i3.addEventListener("click", function () { add("3") })
+        i2.addEventListener("click", function () { add("2") })
+        i1.addEventListener("click", function () { add("1") })
+        i0.addEventListener("click", function () { add("0") })
+        iv.addEventListener("click", function () { add(",") })
+        imult.addEventListener("click", function () { oper(rs.innerText, "X") })
+        isoma.addEventListener("click", function () { oper(rs.innerText, "+") })
+        isub.addEventListener("click", function () { oper(rs.innerText, "-") })
+        idiv.addEventListener("click", function () { oper(rs.innerText, "/") })
+        ires.addEventListener("click", function () { resultados(rs.innerText, operpar) })
+        function add(ipar){
+            var d = window.document.getElementById("resultados")
+            d.style.display = "none"
+            rs.innerText=rs.innerText+ipar
+        }
+        function oper(ipar, operparm) {
+            num1 = Number(ipar)
+            rs.innerText = ""
+            operpar=operparm
+        }
+
+        function resultados(ipar, operpar){
+            num2=Number(ipar)
+            switch (operpar)
+            {
+                case "+":
+                    resultado = num1 + num2
+                    break;
+                case "X":
+                    resultado = num1 * num2
+                    break;
+                case "-":
+                    resultado=num1-num2
+                    break;
+                case "/":
+                    resultado=num1/num2
+                    break;
+            }
+            window.document.getElementById("num1").innerText=num1+operpar+num2+"="+resultado
+            rs.innerText=""   
+            var d=window.document.getElementById("resultados")
+            d.style.display="block"
+        }
+    </script>
 </body>
 </html>
