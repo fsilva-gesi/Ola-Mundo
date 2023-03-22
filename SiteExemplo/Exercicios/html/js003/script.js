@@ -10,13 +10,13 @@ bt3.addEventListener("click", function () { muda(3) })
 function muda(par){
     switch (par){
         case 1:
-            img.src ="imagens/manha.jpg"
+            img.src ="imagens/manha.png"
             break;
         case 2:
-            img.src = "imagens/tarde.jpg"
+            img.src = "imagens/tarde.png"
             break;
         case 3:
-            img.src = "imagens/noite.jpg"
+            img.src = "imagens/noite.png"
     }
 }
 
