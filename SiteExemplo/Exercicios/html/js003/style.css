@@ -15,6 +15,23 @@ section{
 img{
     width: 495px;
 }
+td{
+    background-color: rgb(67, 66, 66);
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.568);
+}
+td:hover{
+    background-color: rgb(120, 119, 119);
+}
+td > a{
+    margin: 15px;  
+    font-size: 0.7em;
+    text-decoration: none;
+    color: white;
+}
 header{
     color: white;
     text-align: center;
