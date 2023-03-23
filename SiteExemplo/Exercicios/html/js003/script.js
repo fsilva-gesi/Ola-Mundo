@@ -20,3 +20,31 @@ function muda(par){
     }
 }
 
+function clicou(bt) {
+    switch (bt) {
+        case 1:
+            bt1.style.transform="translate(1px,1px)"
+        break;
+        case 2:
+            bt2.style.transform = "translate(1px,1px)"
+            break;
+        case 3:
+            bt3.style.transform = "translate(1px,1px)"
+            break;
+    }
+}
+function desclicou(bt) {
+    switch (bt){
+        case 1:
+            bt1.style.transform = "translate(-1px,-1px)"
+            break;
+        case 2:
+            bt2.style.transform = "translate(-1px,-1px)"
+            break;
+        case 3:
+            bt3.style.transform = "translate(-1px,-1px)"
+            break;
+    }
+   
+}
+
