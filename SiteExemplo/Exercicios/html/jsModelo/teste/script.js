@@ -6,7 +6,8 @@ var bt4 = document.getElementById("bt4")
 bt1.addEventListener("click", function () { muda(1) })
 bt2.addEventListener("click", function () { muda(2) })
 bt3.addEventListener("click", function () { muda(3) })
-bt4.addEventListener("click", function () { muda(3) })
+bt4.addEventListener("click", function () { muda(4) })
+
 
 function muda(bt) {
     switch (bt) {

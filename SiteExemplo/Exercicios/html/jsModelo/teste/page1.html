@@ -5,12 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <main>
-        <h1>Page 1</h1>
-        <button onclick="history.back()">Voltar</button>
+        <div class="slider">
+            <div class="voltar">
+                <h1>Page 1</h1>
+                <button id="btv" class="menu-item" onclick="history.back()">Voltar</button>
+            </div>
+            <div class="slides">       
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="f1.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="f2.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="f3.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="f4.JPG" alt="">
+                </div>
+                </div><div class="navigation-bar">
+                    <label class="manual-btn"
+                    for="radio1"></label>
+                    <label class="manual-btn" for="radio2"></label>
+                    <label class="manual-btn" for="radio3"></label>
+                    <label class="manual-btn" for="radio4"></label>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
