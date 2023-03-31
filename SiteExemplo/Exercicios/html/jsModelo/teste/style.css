@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #313131 16.62%, #898787 85.61%);  
+}
+
+.slider{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 1.5s;
+}
+
+.slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+    border-bottom: 0.4px solid white;
+}
+
+main {
+    width: 100%vh;
+    height: 78vh;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+section>h1{
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.695);
+    margin-bottom: 160px;
+}
+article{
+    padding-top: 0px;
+}
+article>p{
+    color: white;
+    padding: 5px;
+    text-indent: 20px;
+}
+
+.logo{
+    height: 45px;
+    align-items: flex-start;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item{
+    color: white;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #757474;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.438);
+}
+
+.menu-item:hover {
+    background-color: #cbc8c8;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
