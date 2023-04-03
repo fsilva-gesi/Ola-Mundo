@@ -11,37 +11,43 @@
 
 <body>
     <main>
-        <h1>Page 1</h1>
-        <div class="slider2">
+        <div class="slider">
+            <div class="voltar">
+                <h1>Page 4</h1>
+                <button id="btv" class="menu-item" onclick="history.back()">Voltar</button>
+            </div>
             <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio1" checked>
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
                 <input type="radio" name="radio-btn" id="radio4">
                 <div class="slide first">
-                    <img src="1976-volkswagen-beetle.jpg" alt="">
+                    <img src="C1.JPG" alt="">
                 </div>
                 <div class="slide">
-                    <img src="1976-volkswagen-beetle.jpg" alt="">
+                    <img src="C2.JPG" alt="">
                 </div>
                 <div class="slide">
-                    <img src="1976-volkswagen-beetle.jpg" alt="">
+                    <img src="C3.JPG" alt="">
                 </div>
                 <div class="slide">
-                    <img src="1976-volkswagen-beetle.jpg" alt="">
+                    <img src="C4.JPG" alt="">
                 </div>
-                <div class="slide first">
-                    <img src="1976-volkswagen-beetle.jpg" alt="">
-                </div>
-                <div class="navigation-bar">
-                    <label class="manual-btn" for="radio1"></label>
-                    <label class="manual-btn" for="radio2"></label>
-                    <label class="manual-btn" for="radio3"></label>
-                    <label class="manual-btn" for="radio4"></label>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
                 </div>
             </div>
+            <div class="navigation-bar">
+                <label class="manual-btn" for="radio1"></label>
+                <label class="manual-btn" for="radio2"></label>
+                <label class="manual-btn" for="radio3"></label>
+                <label class="manual-btn" for="radio4"></label>
+            </div>
         </div>
-        <button onclick="history.back()">Voltar</button>
+        </div>
     </main>
 </body>
 
