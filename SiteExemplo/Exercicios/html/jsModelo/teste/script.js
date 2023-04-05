@@ -1,13 +1,12 @@
-var bt1 = document.getElementById("bt1")
-var bt2 = document.getElementById("bt2")
-var bt3 = document.getElementById("bt3")
-var bt4 = document.getElementById("bt4")
+var bt1 = document.getElementById('bt1')
+var bt2 = document.getElementById('bt2')
+var bt3 = document.getElementById('bt3')
+var bt4 = document.getElementById('bt4')
 
-bt1.addEventListener("click", function () { muda(1) })
-bt2.addEventListener("click", function () { muda(2) })
-bt3.addEventListener("click", function () { muda(3) })
-bt4.addEventListener("click", function () { muda(4) })
-
+bt2.addEventListener("click", () => { muda(2) })
+bt3.addEventListener("click", () => { muda(3) })
+bt4.addEventListener("click", () => { muda(4) })
+bt1.addEventListener("click", () => { muda(1) })
 
 function muda(bt) {
     switch (bt) {
